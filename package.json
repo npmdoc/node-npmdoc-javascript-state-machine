@@ -1,17 +1,40 @@
 {
-    "buildNpmdoc":"javascript-state-machine",
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "buildNpmdoc": "javascript-state-machine",
+    "description": "api documentation for [javascript-state-machine (v2.4.0)](https://github.com/jakesgordon/javascript-state-machine) [![npm package](https://img.shields.io/npm/v/npmdoc-javascript-state-machine.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-javascript-state-machine) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-javascript-state-machine.svg)](https://travis-ci.org/npmdoc/node-npmdoc-javascript-state-machine)",
     "devDependencies": {
-        "javascript-state-machine": "*",
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "javascript-state-machine": "*",
         "utility2": "kaizhu256/node-utility2#alpha"
     },
-    "name":"npmdoc-javascript-state-machine",
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-javascript-state-machine",
+    "keywords": [
+        "documentation",
+        "javascript-state-machine"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_javascript_state_machine.js",
+    "name": "npmdoc-javascript-state-machine",
+    "nameAlias": "npmdoc_javascript_state_machine",
+    "nameOriginal": "npmdoc-javascript-state-machine",
+    "os": [
+        "darwin",
+        "linux"
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/npmdoc/node-npmdoc-javascript-state-machine"
     },
     "scripts": {
-        "build-ci": "utility2 shReadmeTest build_ci.sh"
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
     },
     "version": "0.0.1"
 }
