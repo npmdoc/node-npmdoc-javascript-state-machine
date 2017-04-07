@@ -1,0 +1,17 @@
+{
+    "buildNpmdoc":"javascript-state-machine",
+    "devDependencies": {
+        "javascript-state-machine": "*",
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "name":"npmdoc-javascript-state-machine",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmdoc/node-npmdoc-javascript-state-machine"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh"
+    },
+    "version": "0.0.1"
+}
