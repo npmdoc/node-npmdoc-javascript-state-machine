@@ -1,7 +1,7 @@
 {
     "author": "kai zhu <kaizhu256@gmail.com>",
     "buildNpmdoc": "javascript-state-machine",
-    "description": "api documentation for [javascript-state-machine (v2.4.0)](https://github.com/jakesgordon/javascript-state-machine) [![npm package](https://img.shields.io/npm/v/npmdoc-javascript-state-machine.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-javascript-state-machine) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-javascript-state-machine.svg)](https://travis-ci.org/npmdoc/node-npmdoc-javascript-state-machine)",
+    "description": "#### api documentation for  [javascript-state-machine (v2.4.0)](https://github.com/jakesgordon/javascript-state-machine)  [![npm package](https://img.shields.io/npm/v/npmdoc-javascript-state-machine.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-javascript-state-machine) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-javascript-state-machine.svg)](https://travis-ci.org/npmdoc/node-npmdoc-javascript-state-machine)",
     "devDependencies": {
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
         "javascript-state-machine": "*",
@@ -36,5 +36,5 @@
         "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
         "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
     },
-    "version": "0.0.1"
+    "version": "0.0.2"
 }
